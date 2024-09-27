@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            animation-name: number1;
+            animation-duration: 9s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes number1 {
+            0% {
+                transform: scale(-1, 1,1);
+            }
+
+            100% {
+                transform:translateX(360px);
+            }
+        }
+        
+
+        .box1 {
+            height: 400px;
+            width: 100px;
+            background-color: rgb(187, 76, 150);
+    margin-left: 191px;
+        }
+
+        .box2 {
+            height: 400px;
+            width: 100px;
+            background-color: rgb(151, 178, 235);
+            position: relative;
+            bottom: 400px;
+                margin-left: 236px;
+        }
+
+        .box3 {
+            height: 400px;
+            width: 100px;
+            background-color: rgb(169, 230, 99);
+            position: relative;
+            bottom: 800px;
+                margin-left: 280px;
+        }
+
+        .box4 {
+            height: 400px;
+            width: 100px;
+            background-color: rgb(241, 230, 70);
+            position: absolute;
+            top:8px;
+            margin-left:323px;
+        }
+
+        .box5 {
+            height: 400px;
+            width: 100px;
+            background-color: rgb(224, 138, 24);
+            position: relative;
+            bottom: 1200px;
+                margin-left: 363px;
+        }
+
+        .box6 {
+            height: 400px;
+            width: 100px;
+            background-color: rgb(224, 40, 40);
+            position: relative;
+            bottom: 1600px;
+                margin-left: 400px;
+             animation-name: number;
+            animation-duration: 9s;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier();
+            animation-iteration-count:infinite;
+        }
+
+        @keyframes number {
+            0% {
+               transform: rotateY(90deg);
+            }
+
+            100% {
+                 transform: rotateX(2deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+</body>
+
+</html>
